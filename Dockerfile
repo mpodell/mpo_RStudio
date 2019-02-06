@@ -29,8 +29,6 @@ RUN install2.r --error \
     ngram \
     igraph \
     foreach \
-    ## install Github packages
-    && Rscript -e "devtools::install_github("mpodell/rdiscourse", auth_token = "f9cf11d60f99e7d2f9e8bdd06d0a74cb7ea827b9")" \
     ## clean up
     && rm -rf /tmp/downloaded_packages/ /tmp/*.rds
 
